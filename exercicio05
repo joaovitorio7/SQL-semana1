@@ -1,0 +1,11 @@
+a)
+
+SELECT nome
+FROM TIMES
+WHERE grupo = 'G';
+
+b)
+
+SELECT sigla
+FROM TIMES
+WHERE grupo = 'C';

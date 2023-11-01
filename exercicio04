@@ -1,0 +1,36 @@
+ALTER TABLE TIMES
+ADD COLUMN grupo VARCHAR(1);
+
+UPDATE TIMES
+SET grupo = 'A'
+WHERE sigla IN ('QAT', 'ECU', 'SEN', 'NED');
+
+UPDATE TIMES
+SET grupo = 'B'
+WHERE sigla IN ('ENG', 'IRN', 'USA', 'WAL');
+
+UPDATE TIMES
+SET grupo = 'C'
+WHERE sigla IN ('ARG', 'KSA', 'MEX', 'POL');
+
+UPDATE TIMES
+SET grupo = 'D'
+WHERE sigla IN ('FRA', 'DEN', 'TUN', 'AUS');
+
+UPDATE TIMES
+SET grupo = 'E'
+WHERE sigla IN ('ESP', 'GER', 'JPN', 'CRC');
+
+UPDATE TIMES
+SET grupo = 'F'
+WHERE sigla IN ('BEL', 'CAN', 'MAR', 'CRO');
+
+UPDATE TIMES
+SET grupo = 'G'
+WHERE sigla IN ('BRA', 'SRB', 'SUI', 'CMR');
+
+UPDATE TIMES
+SET grupo = 'H'
+WHERE sigla IN ('POR', 'GHA', 'URU', 'KOR');
+
+SELECT * FROM TIMES;

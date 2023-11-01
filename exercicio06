@@ -1,0 +1,13 @@
+a)
+
+SELECT *
+FROM TIMES
+WHERE grupo IN ('E', 'H')
+ORDER BY grupo;
+
+b)
+
+SELECT *
+FROM TIMES
+WHERE grupo IN ('E', 'H')
+ORDER BY nome;

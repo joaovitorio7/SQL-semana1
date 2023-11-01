@@ -1,0 +1,8 @@
+a)
+SELECT nome
+FROM TIMES
+WHERE sigla = 'KSA';
+
+b) SELECT sigla
+FROM TIMES
+WHERE nome = 'Gana';

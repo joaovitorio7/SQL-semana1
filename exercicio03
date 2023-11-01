@@ -1,0 +1,10 @@
+a)
+SELECT *
+FROM TIMES
+WHERE nome LIKE 'E%';
+
+b)
+SELECT *
+FROM TIMES
+WHERE nome LIKE 'E%' AND sigla LIKE 'U%';
+
