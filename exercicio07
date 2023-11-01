@@ -1,0 +1,21 @@
+a)
+CREATE TABLE CAMPEOES (
+    ano INT,
+    sigla_time VARCHAR(3),
+	primary key (ano),
+    FOREIGN KEY (sigla_time) REFERENCES TIMES(sigla)
+);
+
+b)
+INSERT INTO CAMPEOES (ano, sigla_time)
+VALUES
+    (1930, 'URU'),
+    (1954, 'GER'),
+    (1978, 'ARG'),
+    (1986, 'ARG'),
+    (1998, 'FRA'),
+    (2002, 'BRA'),
+    (2010, 'ESP');
+	
+c)
+SELECT * FROM CAMPEOES;

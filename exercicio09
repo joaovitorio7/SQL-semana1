@@ -1,0 +1,11 @@
+a)
+
+SELECT DISTINCT grupo
+FROM TIMES
+ORDER BY grupo;
+
+b)
+
+SELECT grupo, COUNT(*) as quantidade_times
+FROM TIMES
+GROUP BY grupo;

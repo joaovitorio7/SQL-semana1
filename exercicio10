@@ -1,0 +1,10 @@
+a)
+SELECT DISTINCT UPPER(t.nome)
+FROM TIMES t
+JOIN CAMPEOES c ON t.sigla = c.sigla_time;
+
+b)
+SELECT DISTINCT LOWER(t.nome)
+FROM TIMES t
+LEFT JOIN CAMPEOES c ON t.sigla = c.sigla_time
+WHERE c.sigla_time IS NULL;
